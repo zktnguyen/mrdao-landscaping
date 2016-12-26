@@ -57,6 +57,7 @@ ul li {
   height: 100%;
   border: 1px 0 0 0 #eee;
   margin: 0 auto;
+  font-weight:600;
 }
 
 #important-info {
