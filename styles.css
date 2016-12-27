@@ -3,25 +3,8 @@
   margin: 0 auto;
 }
 
-#services {
-  background-color: #eee;
-  background-size: cover;
-  padding-top: 50px;
-  width: 100%;
-}
-
-#prices {
-  background-color: #FFFAFA;
-  background-size: cover;
-  width: 100%;
-  padding-top: 20px;
-}
-
-#about {
-  background-color: #eee;
-  background-size: cover;
-  padding-top: 20px;
-  width: 100%;
+body {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 #top-nav-bar {
   background-color: #708090;
@@ -57,6 +40,58 @@ a:hover {
   border: none;
   padding: 5px 60px 0 20px;
 }
+
+#services {
+  background-color: #eee;
+  background-size: cover;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.services {
+  text-align: center;
+}
+
+.tree-services {
+  font-size: 4em;
+  color: #006400;
+}
+
+#prices {
+  background-color: #fff;
+  background-size: cover;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#about {
+  background-color: #eee;
+  background-size: cover;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-quote {
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.section-footer {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
 ul {
   padding: 0 0 0 0;
 }
@@ -79,9 +114,7 @@ header a {
   text-transform: uppercase;
 }
 
-
 header .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica,Arial, sans-serif;
   font-style: italic;
   font-size: 25px;
   line-height: 40px;
@@ -89,7 +122,6 @@ header .intro-text .intro-lead-in {
 }
 
 header .intro-text .intro-heading {
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 50px;
@@ -100,14 +132,12 @@ header .intro-text .intro-heading {
 #icons {
   padding-right: 10px;
 }
-#end-footer {
+#contact {
   background-color: #708090;
   height: 100%;
   border: 1px 0 0 0 #eee;
   margin: 0 auto;
-  font-weight:600;
-}
-
-#important-info {
-  padding-top: 50px;
+  font-size: 20px;
+  font-weight:500;
+  padding: 20px 0 20px 0;
 }
