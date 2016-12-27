@@ -3,18 +3,15 @@
   margin: 0 auto;
 }
 
-.main-body {
-  background-color: #eee;
-  padding-top: 70px;
-  margin: auto;
+body {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
-
 #top-nav-bar {
-  background-color: #2E8B57;
-  color: white;
+  background-color: #708090;
+
 }
 
-.navbar {
+.navbar::after {
   border: 0 0 0 1px #eee;
 }
 .navbar ul < li {
@@ -33,8 +30,8 @@
 }
 
 a:hover {
-  background-color: white;
-  color: black;
+  background-color: #eee;
+  font-weight: bold;
 }
 
 .nav-bar-right {
@@ -43,22 +40,104 @@ a:hover {
   border: none;
   padding: 5px 60px 0 20px;
 }
+
+#services {
+  background-color: #eee;
+  background-size: cover;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.services {
+  text-align: center;
+}
+
+.tree-services {
+  font-size: 4em;
+  color: #006400;
+}
+
+#prices {
+  background-color: #fff;
+  background-size: cover;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#about {
+  background-color: #eee;
+  background-size: cover;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-quote {
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.section-footer {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
 ul {
   padding: 0 0 0 0;
 }
 ul li {
   list-style: none;
 }
+header {
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  background-color: black;
+}
+header .intro-text {
+  padding-top: 300px;
+  padding-bottom: 180px;
+}
+
+header a {
+  color: white;
+  text-transform: uppercase;
+}
+
+header .intro-text .intro-lead-in {
+  font-style: italic;
+  font-size: 25px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+header .intro-text .intro-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 75px;
+  margin-bottom: 50px;
+}
+
 #icons {
   padding-right: 10px;
 }
-#end-footer {
+#contact {
   background-color: #708090;
   height: 100%;
   border: 1px 0 0 0 #eee;
   margin: 0 auto;
-}
-
-#important-info {
-  padding-top: 50px;
+  font-size: 20px;
+  font-weight:500;
+  padding: 20px 0 20px 0;
 }
