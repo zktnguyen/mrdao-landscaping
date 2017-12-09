@@ -10,7 +10,7 @@ import registerServiceWorker from './registerServiceWorker';
 const muiTheme = getMuiTheme({
   appBar: {
     color: green800,
-    height: 80,
+    height: 60,
   },
 });
 

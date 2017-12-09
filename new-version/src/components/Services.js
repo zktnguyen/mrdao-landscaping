@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Services = () => (
-  <div className="container-fluid" id="services">
-        <div className="section-title">Services</div>
-        <div className="section-quote">We want to make your home more beautiful</div>
+  <div className="container-fluid text-center" id="services">
+        <div className="section-title">Serving customers across the East Bay!</div>
+        <div className="section-quote">We want to make your home more beautiful, serving you 7 days a week including holidays!</div>
     <div className="row">
       <div className="col services">
         <i className="fa fa-scissors" aria-hidden="true"/><i className="fa fa-tree tree-services" aria-hidden="true"/>
@@ -25,7 +25,7 @@ const Services = () => (
       </div>
     </div>
       
-  <div className="section-footer text-center">Services are available in the East Bay. If there are any DIY projects in your yard that are not listed above, we can come take a look!</div>
+  <div className="section-footer">If there are any DIY projects in your yard that are not listed above, we can come take a look!</div>
 
 </div>
 );
