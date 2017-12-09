@@ -21,6 +21,9 @@ a:hover {
   color: white;
   width: 67%;
   text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .mid-text {
+      width: 100%; } }
   .mid-text h2 {
     font-weight: 900;
     padding: 4rem 0 0 1rem;
@@ -45,13 +48,16 @@ a:hover {
   @media only screen and (min-width: 768px) {
     .photo-cred {
       margin: 2rem 0 0 0; } }
+  @media only screen and (max-width: 768px) {
+    .photo-cred {
+      text-align: center;
+      display: block; } }
   .photo-cred a {
     color: #BDBDBD; }
 
 .button-list {
-  text-align: center; }
-  .button-list .btn {
-    background-color: white; }
+  text-align: center;
+  color: #2E7D32; }
   @media only screen and (min-width: 768px) {
     .button-list {
       padding: 3.5rem 0;
@@ -60,10 +66,14 @@ a:hover {
         margin-left: 12px; } }
   @media only screen and (max-width: 768px) {
     .button-list {
-      padding: 1.0rem 0;
+      padding: 2rem 0;
       text-align: center; }
       .button-list .btn {
-        margin-left: 2px; } }
+        margin-left: 2px; }
+      .button-list .btn-lg {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border-radius: .25rem; } }
   .button-list .btn:hover {
     color: inherit;
     cursor: pointer; }
@@ -78,7 +88,7 @@ a:hover {
   animation-fill-mode: both; }
 
 #services {
-  padding-top: 20px;
+  padding-top: 40px;
   width: 100%;
   border-bottom: 1px solid #e1e1e3;
   border-top: 1px solid #e1e1e3; }
@@ -109,10 +119,14 @@ a:hover {
   font-size: 16px;
   font-weight: 500;
   padding: 20px 0 20px 0; }
+  @media only screen and (max-width: 768px) {
+    #contact {
+      text-align: center;
+      display: block; } }
   #contact ul {
     padding: 0;
     list-style: none; }
   #contact .copyright {
-    text-align: center;
-    display: block;
-    margin: 1.7rem 0 0 0 !important; }
+    margin: 1.7rem auto; }
+  #contact .btn {
+    margin: 0 auto; }
