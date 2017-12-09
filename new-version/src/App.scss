@@ -1,3 +1,60 @@
-.App {
+$grey-color: #9E9E9E;
+$pic-height: 440px;
+$pic-left: 147px;
+
+.front-intro {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('img/daniel-watson-75022.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;
+  height: $pic-height;
+}
+
+.mid-text {
+  color: white;
+  width: 67%;
   text-align: center;
+  h2 {
+    font-weight: 900;
+    padding: 10rem 0 0 3rem;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 1.23rem;
+    padding: 0 0 0 9rem;
+  }
+  
+}
+
+.photo-cred {
+  margin: 2rem 0;
+  top: 457px;
+  position: absolute;
+  left: $pic-left;
+  transform: translate(-50%, -50%);
+  color: $grey-color;
+
+  a {
+    color: #BDBDBD;
+  }
+}
+
+.button-list {
+  width: 80%;
+  padding: 3.5rem 0 0 13rem;
+  text-align: center;
+  .btn {
+    margin-left: 12px;
+    background-color: white;
+  }
+  .btn:hover {
+    color: inherit;
+  }
+}
+
+.animated {
+  animation-duration: 2s !important;
+  animation-fill-mode: both;
 }
