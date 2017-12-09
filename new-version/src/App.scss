@@ -28,18 +28,27 @@ a:hover {
   text-align: center;
   h2 {
     font-weight: 900;
-    padding: 10rem 0 0 3rem;
+    @media only screen and (min-width: 768px) {
+      padding: 10rem 0 0 3rem;      
+    }
+    padding: 4rem 0 0 1rem;
     line-height: 1.2;
   }
   p {
+    @media only screen and (min-width: 768px) {
+      padding: 0 0 0 9rem;     
+    }
     font-size: 1.23rem;
-    padding: 0 0 0 9rem;
+    padding: 0 0 0 2rem;
   }
   
 }
 
 .photo-cred {
-  margin: 2rem 0 0 0;
+  @media only screen and (min-width: 768px) {
+    margin: 2rem 0 0 0; 
+  }
+  margin: 0.2rem 0 0 0;
   top: 450px;
   position: absolute;
   left: $pic-left;
@@ -52,12 +61,26 @@ a:hover {
 }
 
 .button-list {
-  padding: 3.5rem 0;
   text-align: center;
   .btn {
-    margin-left: 12px;
     background-color: white;
   }
+
+  @media only screen and (min-width: 768px) {
+    padding: 3.5rem 0;
+    text-align: center;
+    .btn {
+      margin-left: 12px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 1.0rem 0;
+    text-align: center;
+    .btn {
+      margin-left: 2px;
+    }
+  }
+  
   .btn:hover {
     color: inherit;
     cursor: pointer;    

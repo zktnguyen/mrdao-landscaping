@@ -23,28 +23,47 @@ a:hover {
   text-align: center; }
   .mid-text h2 {
     font-weight: 900;
-    padding: 10rem 0 0 3rem;
+    padding: 4rem 0 0 1rem;
     line-height: 1.2; }
+    @media only screen and (min-width: 768px) {
+      .mid-text h2 {
+        padding: 10rem 0 0 3rem; } }
   .mid-text p {
     font-size: 1.23rem;
-    padding: 0 0 0 9rem; }
+    padding: 0 0 0 2rem; }
+    @media only screen and (min-width: 768px) {
+      .mid-text p {
+        padding: 0 0 0 9rem; } }
 
 .photo-cred {
-  margin: 2rem 0 0 0;
+  margin: 0.2rem 0 0 0;
   top: 450px;
   position: absolute;
   left: 147px;
   transform: translate(-50%, -50%);
   color: #9E9E9E; }
+  @media only screen and (min-width: 768px) {
+    .photo-cred {
+      margin: 2rem 0 0 0; } }
   .photo-cred a {
     color: #BDBDBD; }
 
 .button-list {
-  padding: 3.5rem 0;
   text-align: center; }
   .button-list .btn {
-    margin-left: 12px;
     background-color: white; }
+  @media only screen and (min-width: 768px) {
+    .button-list {
+      padding: 3.5rem 0;
+      text-align: center; }
+      .button-list .btn {
+        margin-left: 12px; } }
+  @media only screen and (max-width: 768px) {
+    .button-list {
+      padding: 1.0rem 0;
+      text-align: center; }
+      .button-list .btn {
+        margin-left: 2px; } }
   .button-list .btn:hover {
     color: inherit;
     cursor: pointer; }
