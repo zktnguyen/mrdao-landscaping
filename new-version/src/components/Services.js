@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Services = () => (
-  <div className="container-fluid text-center" id="services">
+  <div name="services" className="container-fluid text-center" id="services">
         <div className="section-title">Serving customers across the East Bay!</div>
         <div className="section-quote">We want to make your home more beautiful, serving you 7 days a week including holidays!</div>
     <div className="row">

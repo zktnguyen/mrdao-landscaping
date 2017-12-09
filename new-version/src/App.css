@@ -57,7 +57,7 @@ a:hover {
 
 .button-list {
   text-align: center;
-  color: #2E7D32; }
+  color: white; }
   @media only screen and (min-width: 768px) {
     .button-list {
       padding: 3.5rem 0;
@@ -75,7 +75,7 @@ a:hover {
         font-size: 1rem;
         border-radius: .25rem; } }
   .button-list .btn:hover {
-    color: inherit;
+    color: #2E7D32 !important;
     cursor: pointer; }
   .button-list .btn:active {
     outline: none;

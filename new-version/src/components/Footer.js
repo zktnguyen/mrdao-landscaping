@@ -33,8 +33,8 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-        <div className="row copyright text-center">
-          <div className="col-1">
+        <div className="row copyright">
+          <div className="col-4">
             <button
               className="btn btn-secondary"
               onClick={this.scrollToTop}
@@ -42,7 +42,7 @@ class Footer extends Component {
               Back to Top
             </button>
           </div>
-          <div className="col-11">
+          <div className="col-8">
             © 2017&nbsp;
             <a
               href="http://kimtnguyen.me"

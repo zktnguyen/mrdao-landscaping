@@ -1,13 +1,21 @@
+/* eslint jsx-a11y/anchor-is-valid: "off" */
 import React from 'react';
-
+import { Link } from 'react-scroll';
 
 const ButtonMenu = () => (
   <div className="button-list animated fadeIn">
-    <button type="button" className="btn btn-secondary btn-lg">Services</button>
-    <button type="button" className="btn btn-secondary btn-lg">About</button>
-    <button type="button" className="btn btn-secondary btn-lg">Schedule</button>
-    <button type="button" className="btn btn-secondary btn-lg">Contact</button>
-
+    <Link
+      to="services"
+      smooth
+      offset={50}
+      duration={500}
+      className="btn btn-secondary btn-lg"
+    >
+      Learn More About Us
+    </Link>
+    <button type="button" className="btn btn-secondary btn-lg">
+      Schedule
+    </button>
   </div>
 );
 
