@@ -44,3 +44,36 @@
 .animated {
   animation-duration: 2s !important;
   animation-fill-mode: both; }
+
+#services {
+  padding-top: 20px;
+  width: 100%; }
+
+.services {
+  text-align: center; }
+
+.tree-services {
+  font-size: 4em;
+  color: #006400; }
+
+.col-centered {
+  float: none;
+  margin: 0 auto; }
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.section-quote {
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 20px; }
+
+.section-footer {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 40px; }
