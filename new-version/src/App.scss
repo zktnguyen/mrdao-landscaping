@@ -151,17 +151,18 @@ a:hover {
     text-align: center;
     display: block;
   }
-
-  
-
   ul {
     padding: 0;
     list-style: none;
   }
   .copyright {
-    margin: 1.7rem auto;
+    margin: 1.7rem auto auto 0;
   }
   .btn {
     margin: 0 auto;
   }
+}
+
+.schedule-form {
+  margin: 7rem auto;
 }
