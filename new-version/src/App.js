@@ -13,6 +13,7 @@ const App = ({ location }) => (
     <div>
       <Route location={location} exact path="/" component={Landing} />
       <Route location={location} exact path="/mrdao-landscaping/" component={Landing} />
+      <Route location={location} exact path="/schedule" component={ScheduleForm} />
       <Route location={location} exact path="/mrdao-landscaping/schedule" component={ScheduleForm} />
     </div>
   </div>
