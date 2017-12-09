@@ -1,18 +1,18 @@
 /* eslint jsx-a11y/anchor-is-valid: "off" */
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link as SmoothLink } from 'react-scroll';
 
 const ButtonMenu = () => (
   <div className="button-list animated fadeIn">
-    <Link
+    <SmoothLink
       to="services"
       smooth
       offset={50}
-      duration={500}
+      duration={1000}
       className="btn btn-secondary btn-lg"
     >
       Learn More About Us
-    </Link>
+    </SmoothLink>
     <button type="button" className="btn btn-secondary btn-lg">
       Schedule
     </button>
