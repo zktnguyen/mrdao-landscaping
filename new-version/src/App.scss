@@ -3,6 +3,7 @@ $pic-height: 440px;
 $pic-left: 147px;
 $alternate-bg-color: #f4f5f7;
 $green-color: #2E7D32;
+$border-color: #e1e1e3;
 
 .front-intro {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
@@ -12,7 +13,7 @@ $green-color: #2E7D32;
   -o-background-size: cover;      /* Opera*/
   background-size: cover;
   height: $pic-height;
-  border-bottom: 1px solid #e1e1e3;
+  border-bottom: 1px solid $border-color;
 }
 a {
   color: $grey-color;
@@ -67,7 +68,6 @@ a:hover {
     color: #BDBDBD;
   }
 }
-
 
 .button-list {
   text-align: center;
@@ -139,10 +139,9 @@ a:hover {
 }
 
 #contact {
-  border-top: 1px solid #e1e1e3;
+  border-top: 1px solid $border-color;
   background-color: $alternate-bg-color;
   height: 100%;
-  border: 1px 0 0 0 #eee;
   margin: 0 auto;
   font-size: 16px;
   font-weight:500;
@@ -164,5 +163,25 @@ a:hover {
 }
 
 .schedule-form {
-  margin: 7rem auto;
+  @media only screen and (min-width: 768px) {
+    margin: 7rem auto 7rem 5rem;
+  }
+  margin: 2rem auto;
+}
+
+.information-form {
+  border: 1px solid $border-color;
+  @media only screen and (min-width: 768px) {
+    padding: 2rem;    
+  }
+  padding: 1rem;
+}
+
+.schedule-buttons {
+  margin-top: none;
+  float: right;
+  position: relative;
+  .btn {
+    margin-left: 4px;
+  }
 }

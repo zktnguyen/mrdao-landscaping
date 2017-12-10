@@ -114,7 +114,6 @@ a:hover {
   border-top: 1px solid #e1e1e3;
   background-color: #f4f5f7;
   height: 100%;
-  border: 1px 0 0 0 #eee;
   margin: 0 auto;
   font-size: 16px;
   font-weight: 500;
@@ -132,4 +131,21 @@ a:hover {
     margin: 0 auto; }
 
 .schedule-form {
-  margin: 7rem auto; }
+  margin: 2rem auto; }
+  @media only screen and (min-width: 768px) {
+    .schedule-form {
+      margin: 7rem auto 7rem 5rem; } }
+
+.information-form {
+  border: 1px solid #e1e1e3;
+  padding: 1rem; }
+  @media only screen and (min-width: 768px) {
+    .information-form {
+      padding: 2rem; } }
+
+.schedule-buttons {
+  margin-top: none;
+  float: right;
+  position: relative; }
+  .schedule-buttons .btn {
+    margin-left: 4px; }

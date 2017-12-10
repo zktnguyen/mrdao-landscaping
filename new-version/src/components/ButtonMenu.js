@@ -1,6 +1,7 @@
 /* eslint jsx-a11y/anchor-is-valid: "off" */
 import React from 'react';
 import { Link as SmoothLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const ButtonMenu = () => (
   <div className="button-list animated fadeIn">
@@ -13,9 +14,9 @@ const ButtonMenu = () => (
     >
       Learn More About Us
     </SmoothLink>
-    <button type="button" className="btn btn-secondary btn-lg">
+    <Link to='/schedule' className="btn btn-secondary btn-lg">
       Schedule
-    </button>
+    </Link>
   </div>
 );
 
