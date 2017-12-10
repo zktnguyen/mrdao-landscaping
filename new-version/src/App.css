@@ -83,7 +83,7 @@ a:hover {
   .button-list .btn:focus {
     outline: 0; }
 
-.animated {
+.animated .button-list {
   animation-duration: 2s !important;
   animation-fill-mode: both; }
 

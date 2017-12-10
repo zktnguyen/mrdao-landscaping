@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
+import PropTypes from 'prop-types';
+
 import { green800, orange500, blue500 } from 'material-ui/styles/colors';
 
 const styles = {
@@ -27,10 +29,10 @@ class ScheduleForm extends Component {
         name: '',
         address: '',
         city: '',
-        zip: 0,
-        appointmentType: '',
+        zip: '',
         availability: 1,
-        note: ''
+        note: '',
+        contactInfo: ''
       }
     };
   }
@@ -42,6 +44,24 @@ class ScheduleForm extends Component {
     this.setState({ data: { ...this.state.data, [name]: value } });
   };
 
+
+
+  onSubmit = () => this.props.history.push("/confirm");
+
+  resetForm = () =>
+  this.setState({
+    data: {
+      name: '',
+      address: '',
+      city: '',
+      zip: '',
+      appointmentType: '',
+      contactInfo: '',
+      availability: 1,
+      note: ''
+    }
+  });
+
   handleDropdownChange = (event, index, value) => {
     const availability = value;
     this.setState({ data: { ...this.state.data, availability } });
@@ -50,8 +70,8 @@ class ScheduleForm extends Component {
   render() {
     const { data } = this.state;
     return (
-      <div className="container schedule-form">
-        <div className="row  text-center">
+      <div className="container schedule-form animated fadeIn">
+        <div className="row text-center">
           <h3>Schedule an appointment with Mr. Dao</h3>
         </div>
         <div className="row information-form">
@@ -90,15 +110,25 @@ class ScheduleForm extends Component {
               hintText="5-digit code"
               floatingLabelText="Zip Code"
               name="zip"
-              value={data.city}
+              value={data.zip}
               onChange={this.onInputChange}
               underlineFocusStyle={styles.underlineStyle}
               floatingLabelFocusStyle={styles.floatingLabelStyle}
             />
+            <br /><br/>
+            <TextField
+              hintText="E-mail (name@example.com) or Phone Number (xxx) xxx-xxxx"
+              name="contactInfo"
+              value={data.contactInfo}
+              onChange={this.onInputChange}
+              underlineFocusStyle={styles.underlineStyle}
+            />
             <br />
           </div>
           <div className="col-md-6 col-xs-12" style={{ textAlign: 'left' }}>
-            <h4>Availability<small> (Time of the day)</small></h4>
+            <h4>
+              Availability<small> (Time of the day)</small>
+            </h4>
             <DropDownMenu
               name="availability"
               value={data.availability}
@@ -108,27 +138,40 @@ class ScheduleForm extends Component {
               <MenuItem value={2} label="12pm - 5pm" primaryText="Afternoon" />
               <MenuItem value={3} label="5pm - 9pm" primaryText="Evening" />
             </DropDownMenu>
-            <br/><br/>
+            <br />
+            <br />
             <TextField
               hintText="Message or Notes"
               floatingLabelText="Note to Mr. Dao"
               name="note"
-              multiLine fullWidth
+              multiLine
+              fullWidth
+              value={data.note}
               onChange={this.onInputChange}
               underlineFocusStyle={styles.underlineStyle}
               floatingLabelFocusStyle={styles.floatingLabelStyle}
-            /><br />
+            />
+            <br />
           </div>
         </div>
-        <br/>
+        <br />
         <div className="row schedule-buttons">
-          <button type="button" className="btn btn-primary">Submit</button>
-          <button type="button" className="btn btn-danger">Reset Form</button>
-
+          <button type="button" className="btn btn-primary" onClick={this.onSubmit}>
+            Submit
+          </button>
+          <button type="button" className="btn btn-danger" onClick={this.resetForm}>
+            Reset Form
+          </button>
         </div>
       </div>
     );
   }
 }
+
+ScheduleForm.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired
+  }).isRequired
+};
 
 export default ScheduleForm;

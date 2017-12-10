@@ -18,14 +18,14 @@ const muiTheme = getMuiTheme({
 
 const MyThemeApp = () => (
   <MuiThemeProvider muiTheme={muiTheme}>
-    <App />
+  <BrowserRouter>
+    <Route component={App}/>
+  </BrowserRouter>
   </MuiThemeProvider>
 );
 
 render(
-  <BrowserRouter>
-    <Route component={MyThemeApp} />
-  </BrowserRouter>,
+  <MyThemeApp/>,
   document.getElementById('root')
 );
 registerServiceWorker();
